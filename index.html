@@ -6,6 +6,57 @@
 -->
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+		  font-family: "Lato", sans-serif;
+		}
+		
+		.sidenav {
+		  height: 50%;
+		  width: 180px;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: transparent;
+		  overflow-x: hidden;
+		  padding-top: 20px;
+		}
+		
+		.sidenav a {
+		  padding: 6px 6px 6px 32px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  color: #f8f2f2;
+		  display: block;
+		}
+		
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+		
+		.main {
+		  margin-left: 0px; /* Same as the width of the sidenav */
+		}
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
+		</head>
+		<body>
+		
+		<div class="sidenav">
+		  <a href="#one">&ltskills/&gt</a>
+		  <a href="#two">&ltprojects/&gt</a>
+		  <a href="#three">&ltabout_me/&gt</a>
+		  <a href="#footer">&ltContact/&gt</a>
+		</div>
+		   
+		</body>
+	<head>
 		<title>Thomas Marble</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -21,7 +72,7 @@
 				</header>
 				<div class="container">
 					<ul class="actions special">
-						<li><a href="#one" class="button primary scrolly">Begin</a></li>
+						<li><a href="#one" class="button primary scrolly">&ltBegin&gt</a></li>
 					</ul>
 				</div>
 			</section>
@@ -76,78 +127,76 @@
 		</section>
 
 	<!-- Two -->
-		<section id="two" class="main special">
-			<div class="container">
-				<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
-				<div class="content">
-					<header class="major">
-						<h2>About Me</h2>
-					</header>
-					<p>I am a highly adaptaptable fullstack developer with experience in app and web design, SQL databases, and writing console applications with C#. I am a diligent worker, and an innovative problem solver.</p>
-					<ul class="icons-grid">
-						<li>
-							<span class="icon solid major fa-desktop"></span>
-							<h3></h3>
-						</li>
-						<li>
-							<span class="icon solid major fa-code"></span>
-							<h3></h3>
-						</li>
-						<li>
-							<span class="icon solid major fa-code-branch"></span>
-							<h3></h3>
-						</li>
-						<li>
-							<span class="icon solid major fa-divide"></span>
-							<h3></h3>
-						</li>
+	<section id="two" class="main special">
+		<div class="container">
+			<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
+			<div class="content">
+				<header class="major">
+					<h2>Projects and Experience</h2>
+				</header>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/trueCodersLogo.webp" alt="" /></span>
+					<h3>Advanced Technical training</h3>
+					<p>A project and lecture-based training program that aims to fill the growing
+						need for data science and software development jobs. Projects include
+						multiple personal and group-oriented tasks that involve multiple
+						programming languages over the course of the program.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/tmarb3?tab=repositories" class="button">Github</a></li>
 					</ul>
 				</div>
-				<a href="#three" class="goto-next scrolly">Next</a>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/database image.jpeg" alt="" /></span>
+					<h3>Best Buy Database</h3>
+					<p>The BestBuy database simulates an inventory management system along with employee sales records. Here i have implemented a repository pattern to isolate the data access logic and business logic in order to allow for a more loosely coupled approached to data access from a sample BestBuy databases I also demonstrated CRUD operations through a console user interface via ASP.NET and used dabatbases in VS C# with dapper(ORM) via MySQL tables Department</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/tmarb3/sql/blob/main/sql.sql" class="button">Mock Best Buy Repository</a></li>
+					</ul>
+				</div>
+				<div class="col-4 col-12-medium">
+					<span class="image fit"><img src="images/geolocation image.jpg" alt="" /></span>
+					<h3>TacoBell Geolocator</h3>
+					<p>An exercise in geolocation, csv parsing, & logging where I used the Geolocater Nuget Package to calculate the furthest Taco Bell store locations.</p>
+					<ul class="actions special">
+						<li><a href="https://github.com/tmarb3/TacoParser" class="button">tacoParser</a></li>
+					</ul>
+				</div>
 			</div>
-		</section>
-
-
+			<a href="#three" class="goto-next scrolly">Next</a>
+		</div>
+	</section>
 		<!-- Three -->
+			
 			<section id="three" class="main special">
 				<div class="container">
 					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>Projects and Experience</h2>
+							<h2>About Me</h2>
 						</header>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/trueCodersLogo.webp" alt="" /></span>
-							<h3>Coding Bootcamp</h3>
-							<p>A project and lecture-based training program that aims to fill the growing
-								need for data science and software development jobs. Projects include
-								multiple personal and group-oriented tasks that involve multiple
-								programming languages over the course of the program.</p>
-							<ul class="actions special">
-								<li><a href="https://github.com/tmarb3?tab=repositories" class="button">Github</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/database image.jpeg" alt="" /></span>
-							<h3>Best Buy Database</h3>
-							<p>The BestBuy database simulates an inventory management system along with employee sales records. Here i have implemented a repository pattern to isolate the data access logic and business logic in order to allow for a more loosely coupled approached to data access from a sample BestBuy databases I also demonstrated CRUD operations through a console user interface via ASP.NET and used dabatbases in VS C# with dapper(ORM) via MySQL tables Department</p>
-							<ul class="actions special">
-								<li><a href="https://github.com/tmarb3/sql" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
-							<h3>Magna feugiat lorem</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
+						<p>I am a highly adaptaptable fullstack developer with experience in app and web design, SQL databases, and writing console applications with C#. I am a diligent worker, and an innovative problem solver.</p>
+						<ul class="icons-grid">
+							<li>
+								<span class="icon solid major fa-desktop"></span>
+								<h3></h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-code"></span>
+								<h3></h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-code-branch"></span>
+								<h3></h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-divide"></span>
+								<h3></h3>
+							</li>
+						</ul>
 					</div>
 					<a href="#footer" class="goto-next scrolly">Next</a>
 				</div>
 			</section>
-
 		<!-- Four -->
 		<!--
 			<section id="four" class="main">
@@ -489,15 +538,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</form>
 				</div>
 				<footer>
-					<ul class="icons">
+					<!--<ul class="icons">
 						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
+					</ul> -->
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+						<li>&copy; 2022</li><li>Design: Thomas Marble</li>
 					</ul>
 				</footer>
 			</section>
